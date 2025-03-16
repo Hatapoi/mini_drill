@@ -98,7 +98,7 @@ const ProductPage = () => {
               className="w-full rounded-lg shadow-lg cursor-pointer"
               onClick={() => handleThumbnailClick(bormini)}
             />
-            <div className="flex gap-4 mt-4">
+            <div className="flex flex-wrap gap-4 mt-4">
               {thumbnailImages.map((image, index) => (
                 <img
                   key={index}
