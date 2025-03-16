@@ -9,6 +9,9 @@ import bormini3 from "./assets/bormini3.jpg"
 import costumer1 from "./assets/costumer1.jpg"
 import costumer2 from "./assets/costumer2.jpg"
 import costumer3 from "./assets/costumer3.jpg"
+import borhitam from "./assets/borhitam.jpeg"
+import paket1 from "./assets/paket1.jpg"
+import paket2 from "./assets/paket2.jpg"
 
 const ProductPage = () => {
   // State for modal and selected image
@@ -59,6 +62,12 @@ const ProductPage = () => {
     bormini1,
     bormini2,
     bormini3,
+    borhitam,
+  ];
+
+  const packagingImages = [
+    paket1, // Gambar paket 1
+    paket2, // Gambar paket 2
   ];
 
   // Handle thumbnail click
@@ -123,9 +132,8 @@ const ProductPage = () => {
                 Size
               </label>
               <select id="size" className="block w-full bg-white border border-gray-300 rounded-lg py-2 px-4 text-black">
-                <option>27pcs  (56 tersisa)</option>
-                <option>130pcs (habis)</option>
-                <option>240pcs (habis)</option>
+                <option>Hijau 27pcs (59 tersisa)</option>
+                <option>Hitam 27pcs (64 tersisa)</option>
               </select>
             </div>
 
@@ -214,6 +222,19 @@ const ProductPage = () => {
                     </div>
                     <p className="text-gray-600 mt-2">{testimonial.review}</p>
                   </div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-12">
+              <h2 className="text-xl font-bold mb-4 text-black">Our Packaging</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {packagingImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Packaging ${index + 1}`}
+                    className="w-full rounded-lg shadow-lg"
+                  />
                 ))}
               </div>
             </div>
