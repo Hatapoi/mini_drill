@@ -19,7 +19,7 @@ const ProductPage = () => {
   const [selectedImage, setSelectedImage] = useState('');
 
   // Product details
-  const productName = "Bor Mini 12V DC 15000 RPM Mini Drill Electric Engraver Grinder";
+  const productName = "Bor Mini 12V DC 15000 RPM";
   const productPrice = "Rp. 110.000"; // Harga setelah diskon
   const originalPrice = "Rp. 160.000"; // Harga sebelum diskon
 
@@ -129,7 +129,7 @@ const ProductPage = () => {
             {/* Size Selector */}
             <div className="mb-6">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="size">
-                Size
+                Varian
               </label>
               <select id="size" className="block w-full bg-white border border-gray-300 rounded-lg py-2 px-4 text-black">
                 <option>Hijau 27pcs (59 tersisa)</option>
