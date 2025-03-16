@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import Footer from './Footer';
+import Footer from './Footer.jsx';
 import bormini1 from "./assets/bormini1.jpg"
 import bormini from "./assets/bormini.jpg"
 import bormini2 from "./assets/bormini2.jpg"
