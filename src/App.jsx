@@ -12,7 +12,7 @@ import costumer3 from "./assets/costumer3.jpg"
 import borhitam from "./assets/borhitam.jpeg"
 import paket1 from "./assets/paket1.jpg"
 import paket2 from "./assets/paket2.jpg"
-import useFacebookPixel from "./hooks/facebookPixelHook";
+import useFacebookPixel from "./hooks/facebookPixelHooks.js";
 
 const ProductPage = () => {
   const pixelId = import.meta.env.VITE_FB_PIXEL_ID;
